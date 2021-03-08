@@ -41,7 +41,7 @@ class Calculator:
 
     def compute_div(self, op1, op2):
         """
-        The computer method for division operation.
+        The computer method for divition operation.
 
         :param op1: float
             The first operand
@@ -51,3 +51,18 @@ class Calculator:
             return the division of two operands
         """
         return op1 / op2
+
+    def compute_mul(self, op1, op2):
+        """
+        The computer method for multiplication operation.
+
+        :param op1: float
+            The first operand
+        :param op2: float
+            The second operand
+        :return : float
+            return the multiplication of two operands
+        """
+        return op1 * op2
+
+
