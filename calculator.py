@@ -1,3 +1,6 @@
+from errors import Errors
+
+
 class Calculator:
     """
     The main class for our computation logics.
@@ -50,6 +53,8 @@ class Calculator:
         :return : float
             return the division of two operands
         """
+        if op2 == 0:
+            return Errors.DIV_BY_ZERO
         return op1 / op2
 
     def compute_mul(self, op1, op2):

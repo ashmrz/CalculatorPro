@@ -30,6 +30,7 @@ class TestCalculator(unittest.TestCase):
         name = 'Calc'
         calculator = Calculator(name)
         self.assertEqual(calculator.compute_div(4, -2), -2)
+        self.assertEqual(calculator.compute_div(4, 0), Errors.DIV_BY_ZERO)
         self.assertAlmostEqual(calculator.compute_div(5, 2), 2.5)
 
     def test_mul(self):
