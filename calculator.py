@@ -1,4 +1,5 @@
 from errors import Errors
+import math
 
 
 class Calculator:
@@ -70,4 +71,13 @@ class Calculator:
         """
         return op1 * op2
 
+    def compute_sqrt(self, op1):
+        """
+        The computer method for multiplication operation.
 
+        :param op1: float
+            The first operand
+        :return : float
+            return the square root of the input
+        """
+        return math.sqrt(op1)
