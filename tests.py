@@ -25,3 +25,9 @@ class TestCalculator(unittest.TestCase):
         calculator = Calculator(name)
         self.assertEqual(calculator.compute_sub(2, 10), -8)
         self.assertAlmostEqual(calculator.compute_sub(-1, 0.5), -1.5)
+
+    def test_div(self):
+        name = 'Calc'
+        calculator = Calculator(name)
+        self.assertEqual(calculator.compute_div(4, -2), -2)
+        self.assertAlmostEqual(calculator.compute_div(5, 2), 2.5)

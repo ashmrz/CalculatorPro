@@ -38,3 +38,16 @@ class Calculator:
             return the subtraction of two operands
         """
         return op1 - op2
+
+    def compute_div(self, op1, op2):
+        """
+        The computer method for division operation.
+
+        :param op1: float
+            The first operand
+        :param op2: float
+            The second operand
+        :return : float
+            return the division of two operands
+        """
+        return op1 / op2
