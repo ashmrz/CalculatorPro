@@ -53,3 +53,10 @@ class TestCalculator(unittest.TestCase):
         calculator = Calculator(name)
         self.assertEqual(calculator.compute_pow(2, 10), 1024)
         self.assertAlmostEqual(calculator.compute_pow(5, 3), 125)
+
+    def test_sin(self):
+        name = 'Calc'
+        calculator = Calculator(name)
+        self.assertAlmostEqual(calculator.compute_sin(math.pi / 2), 1)
+        self.assertAlmostEqual(calculator.compute_sin(math.pi / 6), 1 / 2)
+        self.assertAlmostEqual(calculator.compute_sin(math.pi / 4), math.sqrt(2) / 2)

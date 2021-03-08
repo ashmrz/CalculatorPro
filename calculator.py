@@ -95,3 +95,13 @@ class Calculator:
             return the power of first operands into second operand
         """
         return op1 ** op2
+
+    def compute_sin(self, op1):
+        """
+        The computer method for Sin operation.
+        :param op1: float
+            The first operand
+        :return : float
+            return the Sin of first operand
+        """
+        return math.sin(op1)
