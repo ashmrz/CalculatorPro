@@ -38,3 +38,16 @@ class Calculator:
             return the subtraction of two operands
         """
         return op1 - op2
+
+    def compute_mul(self, op1, op2):
+        """
+        This function return multiply of its inputs
+
+        :param op1: float
+            The first operand
+        :param op2: float
+            The second operand
+        :return : float
+            return the multiplication of two operands
+        """
+        return op1 * op2

@@ -25,3 +25,9 @@ class TestCalculator(unittest.TestCase):
         calculator = Calculator(name)
         self.assertEqual(calculator.compute_sub(2, 10), -8)
         self.assertAlmostEqual(calculator.compute_sub(-1, 0.5), -1.5)
+
+    def test_mul(self):
+        name = 'Calc'
+        calculator = Calculator(name)
+        self.assertEqual(calculator.compute_mul(2, 10), 20)
+        self.assertAlmostEqual(calculator.compute_mul(-2, 0.3), -0.6)
