@@ -115,3 +115,14 @@ class Calculator:
             return the Cos of first operand
         """
         return math.cos(op1)
+
+    def compute_tan(self, op1):
+        """
+        The computer method for Tan operation.
+        :param op1: float
+            The first operand
+        :return : float
+            return the Tan of first operand
+        """
+        return math.tan(op1)
+
