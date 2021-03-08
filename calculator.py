@@ -80,6 +80,8 @@ class Calculator:
         :return : float
             return the square root of the input
         """
+        if op1 < 0:
+            return Errors.NEGATIVE_SQRT
         return math.sqrt(op1)
 
     def compute_pow(self, op1, op2):
