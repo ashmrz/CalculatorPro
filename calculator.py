@@ -105,3 +105,13 @@ class Calculator:
             return the Sin of first operand
         """
         return math.sin(op1)
+
+    def compute_cos(self, op1):
+        """
+        The computer method for Cos operation.
+        :param op1: float
+            The first operand
+        :return : float
+            return the Cos of first operand
+        """
+        return math.cos(op1)
