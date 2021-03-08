@@ -73,3 +73,9 @@ class TestCalculator(unittest.TestCase):
         calculator = Calculator(name)
         self.assertAlmostEqual(calculator.compute_tan(math.pi / 3), math.sqrt(3))
         self.assertAlmostEqual(calculator.compute_tan(math.pi / 4), 1)
+
+    def test_cot(self):
+        name = 'Calc'
+        calculator = Calculator(name)
+        self.assertAlmostEqual(calculator.compute_cot(math.pi / 3), 1 / math.sqrt(3))
+        self.assertAlmostEqual(calculator.compute_cot(math.pi / 4), 1)

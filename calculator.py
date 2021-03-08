@@ -126,3 +126,13 @@ class Calculator:
         """
         return math.tan(op1)
 
+    def compute_cot(self, op1):
+        """
+        The computer method for Cot operation.
+        :param op1: float
+            The first operand
+        :return : float
+            return the Cot of first operand
+        """
+        return 1 / math.tan(op1)
+
