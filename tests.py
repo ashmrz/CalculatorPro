@@ -38,3 +38,9 @@ class TestCalculator(unittest.TestCase):
         calculator = Calculator(name)
         self.assertEqual(calculator.compute_mul(2, 10), 20)
         self.assertAlmostEqual(calculator.compute_mul(-2, 0.3), -0.6)
+
+    def test_pow(self):
+        name = 'Calc'
+        calculator = Calculator(name)
+        self.assertEqual(calculator.compute_pow(2, 10), 1024)
+        self.assertAlmostEqual(calculator.compute_pow(5, 3), 125)

@@ -70,4 +70,17 @@ class Calculator:
         """
         return op1 * op2
 
+    def compute_pow(self, op1, op2):
+        """
+        The computer method for power operation.
+
+        :param op1: float
+            The first operand
+        :param op2: float
+            The second operand
+        :return : float
+            return the power of first operands into second operand
+        """
+        return op1 ** op2
+
 
